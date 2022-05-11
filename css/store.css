@@ -1,0 +1,302 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Bodoni Moda', serif;
+	
+	
+  }
+body {
+    background-repeat: no-repeat;
+    color: black;
+    background-color: #ebe4e4;
+    overflow-x: hidden; 
+  }
+  
+
+  
+  .heading {
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    text-align: center;
+    color: #5e0202;
+    position: relative;
+    top: 100px;
+  }
+
+  /*-------------------    Coffee Point logo side ------------->*/
+  .logo2 img{
+    height:100px;
+    widows: 100px;
+    display:block;
+    position:absolute;
+    z-index:1021;
+    top:-4px;
+    left:5px;
+  }
+  .logo2 h1{
+    display:block;
+    position:absolute;
+    z-index:1022;
+    top:1px;
+    left:90px;
+    margin:0;
+    opacity:1;
+    color: #635553;
+    font-size:25px;
+    font-weight:300;
+    white-space:nowrap;
+    letter-spacing: 0;
+    transition:opacity .3s ease-in-out;
+    font-family: 'Bodoni Moda', serif;
+  }
+  .logo2 h2{
+    display:block;
+    position:absolute;
+    z-index:1022;
+    top:10px;
+    left:185px;
+    margin:0;
+    opacity:1;
+    color:#fff;
+    font-size:22px;
+    font-weight:200;
+    letter-spacing:-2px;
+    white-space:nowrap;
+    transition:opacity .3s ease-in-out;
+    font-family: 'Bodoni Moda', serif;
+  }
+  
+  
+
+/*-------------------    Coffee Point Card ------------->*/
+
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  flex-wrap:wrap;
+  width:100%;
+  height: auto;
+  text-align: center;
+  margin: 90px 0;
+  padding: 20px;
+ 
+}
+
+
+
+.container .card{
+  width:300px;
+  height: 350px;
+  margin: 10px;
+  padding: 20px 30px;
+  background: #ebe4e4;
+  border-radius:20px;
+  box-shadow: -6px -6px 20px rgba(255,255,255,1), 
+               6px 6px 20px rgba(0,0,0,1);
+  
+}
+
+
+.container .card:hover{
+  box-shadow: inset -6px -6px 10px #e0bfb3, 
+               inset 6px 6px 20px #e0bfb3;
+  
+}
+
+.container .card .imgBx{
+  position: relative;
+  text-align:center; 
+}
+
+
+
+.container .card .imgBx img{
+  max-width:50%;
+}
+/*-----------------------------------------*/
+.container .card .imgBx2{
+  position: relative;
+  text-align:center; 
+}
+
+.container .card .imgBx2 img{
+  max-width:65%;
+  margin: 15px;
+}
+/*-----------------------------------------*/
+.container .card .imgBx3{
+  position: relative;
+  text-align:center; 
+}
+
+
+.container .card .imgBx3 img{
+  max-width:70%;
+  
+}
+/*-----------------------------------------*/
+.container .card .contentBx{
+  position: relative;
+  margin-top:20px;
+}
+
+.contentBx h2{
+  color: #635553;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing:2px;
+  
+}
+.container .card .imgBx4{
+  position: relative;
+  text-align:center; 
+}
+
+
+.container .card .imgBx4 img{
+  max-width:70%;
+  
+}
+
+.contentBx a{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 70px;
+  border-radius:40px;
+  color: #635553;
+  font-size: 16px;
+  text-decoration:none;
+   box-shadow: -4px -4px 15px rgba(255,255,255,1), 
+               4px 4px 15px rgba(0,0,0,0.1);
+}
+.contentBx a:hover{
+  box-shadow: inset -4px -4px 10px #bba399, 
+               inset 4px 4px 10px #bba399;
+  
+}
+.contentBx a:hover span{
+  display:block;
+  transform: scale(0.98);
+}
+.imgBx:hover,.contentBx :hover {
+  transform: scale(0.98);
+}
+/*-----------------------------------------*/
+.container .card .contentBx4{
+  position: relative;
+  margin-top:20px;
+}
+
+.contentBx4 h2{
+  color: #635553;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing:2px;
+  padding: 10px;
+  
+}
+
+.contentBx4 a{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 70px;
+  border-radius:40px;
+  color: #635553;
+  font-size: 16px;
+  text-decoration:none;
+   box-shadow: -4px -4px 15px rgba(255,255,255,1), 
+               4px 4px 15px rgba(0,0,0,0.1);
+}
+.contentBx4 a:hover{
+  box-shadow: inset -4px -4px 10px #bba399, 
+               inset 4px 4px 10px #bba399;
+  
+}
+.contentBx4 a:hover span{
+  display:block;
+  transform: scale(0.98);
+}
+.imgBx:hover,.contentBx4 :hover {
+  transform: scale(0.98);
+}
+
+  
+
+/*--------------- coffee point footer  ---------------------------*/
+/*--------------- Social footer  ---------------------------*/
+.icons-footer{
+	display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 30px;	
+}
+.social-icons{
+  display: block; 
+  height: 50px;	
+}
+
+.instagram:hover img{
+	transform: translateY(0.30em);
+	border-color: #e0bfb3;
+	border-style: solid;
+	border-radius: 6px;
+	border-width: 3px;
+}
+.twitter:hover img{
+	transform: translateY(0.30em);
+	border-color: #e0bfb3;
+	border-style: solid;
+	border-radius: 6px;
+	border-width: 3px;
+}
+.linkedin:hover img{
+	transform: translateY(0.30em);
+	border-color: #e0bfb3;
+	border-style: solid;
+	border-radius: 6px;
+	border-width: 3px;
+	
+}
+ 
+
+/*--------------- The End of footer  ---------------------------*/
+
+hr {
+    border: 1px solid #e0bfb3;
+    margin-bottom: 0px;
+    width: 90%;
+  }
+
+.coffee-point-footer {
+    align-items: center;
+    background-color: #bba399;
+    color: #635553;
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    justify-content: center;
+  }
+.coftee-copyright{
+	position: relative;
+	top: 10px;
+}
+  
+
+
+/*--------------- media  ---------------------------*/
+  
+@media screen and (max-width: 970px) {
+	
+  
+  .heading {
+      font-family: 'Lora', serif;
+      font-size: 20px;
+      text-align: center;
+      color: #5e0202;
+    }
+      
+      }  

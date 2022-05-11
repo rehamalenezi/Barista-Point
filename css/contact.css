@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bodoni Moda', serif;
+   /* background-image: linear-gradient(to right top,#635553, #bba399, #e0bfb3, #ebe4e4);*/
+   background-color: #ebe4e4;
+}
+
+/*--------------------- Logo Section --------------------------------*/
+.logo img{
+	height:100px;
+	widows: 100px;
+	display:block;
+	position:absolute;
+	z-index:1021;
+	top:-4px;
+	left:5px;
+}
+
+.logo h1{
+	display:block;
+	position:absolute;
+	z-index:1022;
+	top:20px;
+	left:100px;
+	margin:0;
+	opacity:1;
+	color: #635553;
+	font-size:25px;
+	font-weight:300;
+	white-space:nowrap;
+	letter-spacing: 0;
+	transition:opacity .3s ease-in-out;
+}
+.logo h2{
+	display:block;
+	position:absolute;
+	z-index:1022;
+	top:33px;
+	left:205px;
+	margin:0;
+	opacity:1;
+	color: #bba399;
+	font-size:22px;
+	font-weight:200;
+	letter-spacing:-2px;
+	white-space:nowrap;
+	transition:opacity .3s ease-in-out;
+}
+.logo h1  a{
+    text-decoration: none;
+    color: #635553;
+}
+.logo h2  a{
+    text-decoration: none;
+    color: #bba399;
+}
+
+
+
+
+/*-------------------- Form Section---------------------------------*/
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #5e0202;
+}
+.container{
+    width: 90%;
+    max-width: 500px;
+    margin: 0;
+    padding: 20px ;
+    margin-top: 90px;
+    box-shadow: 0px 0px 20px #bba399;
+    background-color: #ebe4e4;
+    border-radius: 8px;
+    margin-bottom: 150px;
+}
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    margin-top: 5px;
+}
+textarea{
+    resize: vertical;
+}
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: monospace;
+    cursor: pointer;
+    margin-top: 10px;
+    background:#bba399;
+    color: #EBE4E4;
+    transition: 0.3 ease background-color ;
+}
+button[type="submit"]:hover{
+    color:#EBE4E4;
+    background: #635553;
+}
+
+#status{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 60px auto;
+    border-radius: 8px;
+    
+}
+#status.success{
+    background-color: rgb(211, 250, 153);
+    animation:  status  4s  forwards;
+}
+
+#status.error{
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation:  status  4s forwards;
+    
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+
+/*--------------- coffee point footer  ---------------------------*/
+
+.coffee-point-footer {
+    align-items: center;
+    color: #635553;
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    justify-content: center;
+  }
+
+
+  @media screen and (max-width: 970px) {
+    .container{
+        width: 90%;
+        max-width: 500px;
+        margin: 0;
+        padding: 25px ;
+        margin-top: -90px;
+        box-shadow: 0px 0px 20px #bba399;
+        background-color: #ebe4e4;
+        border-radius: 8px;
+        margin-bottom: 150px;
+    }
+    
+    #status{
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+        padding: 0 auto;
+        margin: 100px auto;
+        border-radius: 8px;
+        
+    }
+
+
+  }

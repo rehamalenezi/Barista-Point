@@ -1,0 +1,294 @@
+/*
+The color code for the project:
+dark text: #635553
+background: #bba399
+hover: #e0bfb3
+body backhround:  #ebe4e4
+P TEXT:  #5e0202
+*/
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-family: 'Bodoni Moda', serif;
+    margin: 0;
+    padding: 0;
+   }
+  body{
+    background-color: #ebe4e4;
+    margin: 0;
+    padding: 0;
+	
+  }
+
+/*-----------------------the video part-----------------------*/
+  section{
+	  position: relative;
+	  width:100%;
+	  min-height: 100vh;
+	  display:flex;
+	  justify-content: center;
+	  align-items: center;
+	  overflow:hidden;
+	  padding:0px;
+	}
+	section video{
+	  position: absolute;
+	  top:50px;
+	  left:0px;
+	  width:100%;
+	  height:100%;
+	  object-fit:cover;
+	  
+	}
+ /*-----------------------the about & start part-----------------------*/
+
+ .about-us{
+	transform: translateY(-10%);
+	text-align: center;
+	color: #5E5666 ;
+	margin: 60px;
+	}
+	
+	.about-us h1{
+	font-size: 100px;
+	font-weight: 900;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 10px;
+	background: url("https://images.pexels.com/photos/34085/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	}
+	
+	.about-us p{
+	  color: #5e0202;
+	  font-size: 20px;
+	}
+  
+
+
+	
+
+	
+/*------------------------ For You  Part ----------------------------------*/ 
+.forYou{
+	position: absolute;
+	text-align: center;
+	font-size: 30px;
+	word-spacing: 10px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color:  #5e0202;
+	left: 350px;
+	margin-top: 0;
+	margin-bottom: 0;
+
+	
+
+}
+
+
+/*-------------------    Coffee Point Card ------------->*/
+
+
+.container{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	flex-wrap:wrap;
+	width:100%;
+	text-align: center;
+	margin: 80px 0;
+	padding: 50px;
+}
+
+.container .card{
+  width:340px;
+  height: 350px;
+  margin: 20px;
+  padding: 20px 30px;
+  background: #ebe4e4;
+  border-radius:20px;
+  box-shadow: -6px -6px 20px rgba(255,255,255,1), 
+			   6px 6px 20px rgba(0,0,0,1);
+  border-style:  solid;
+  border-width: 2px;
+  border-color: #e0bfb3;
+  
+}
+
+
+.container .card:hover{
+  box-shadow: inset -6px -6px 10px #e0bfb3, 
+               inset 6px 6px 20px #e0bfb3;
+  
+}
+
+.container .card .imgBx{
+  position: relative;
+  text-align:center; 
+}
+
+
+
+.container .card .imgBx img{
+  max-width:120px;
+}
+
+.container .card .contentBx{
+  position: relative;
+  margin-top:20px;
+}
+
+.contentBx h2{
+  color: #635553;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing:2px;
+}
+.contentBx p{
+   color: #635553;
+   font-size: 14px;
+ 
+}
+.contentBx a{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius:40px;
+  color: #635553;
+  font-size: 16px;
+  text-decoration:none;
+   box-shadow: -4px -4px 15px rgba(255,255,255,1), 
+               4px 4px 15px rgba(0,0,0,0.1);
+}
+.contentBx a:hover{
+  box-shadow: inset -4px -4px 10px #bba399, 
+               inset 4px 4px 10px #bba399;
+  
+}
+.contentBx a:hover span{
+  display:block;
+  transform: scale(0.98);
+  
+}
+.imgBx:hover,.contentBx :hover {
+  transform: scale(0.98);
+}
+
+
+
+
+/*--------------- coffee point footer  ---------------------------*/
+/*--------------- Social footer  ---------------------------*/
+.icons-footer{
+	display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 30px;	
+}
+.social-icons{
+  display: block; 
+  height: 50px;	
+}
+
+.instagram:hover img{
+	transform: translateY(0.30em);
+	border-color: #e0bfb3;
+	border-style: solid;
+	border-radius: 6px;
+	border-width: 3px;
+}
+.twitter:hover img{
+	transform: translateY(0.30em);
+	border-color: #e0bfb3;
+	border-style: solid;
+	border-radius: 6px;
+	border-width: 3px;
+}
+.linkedin:hover img{
+	transform: translateY(0.30em);
+	border-color: #e0bfb3;
+	border-style: solid;
+	border-radius: 6px;
+	border-width: 3px;
+	
+}
+ 
+
+/*--------------- The End of footer  ---------------------------*/
+
+hr {
+    border: 1px solid #e0bfb3;
+    margin-bottom: 0px;
+    width: 90%;
+  }
+
+.coffee-point-footer {
+    align-items: center;
+    background-color: #bba399;
+    color: #635553;
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    justify-content: center;
+  }
+.coftee-copyright{
+	position: relative;
+	top: 10px;
+}
+
+  
+
+
+
+  @media screen and (max-width: 970px) {
+	
+	  section video{
+		max-width: 100%;
+		height: auto;
+	  }
+	  .about-us{
+		margin: 20px;
+		padding-top: 20px;
+		margin-top: -500px;
+		margin-left:25px;	
+
+		}
+	  .about-us h1{
+		font-size: 43px;
+		}
+		
+		.about-us p{
+		  color: #5e0202;
+		  font-size: 15px;
+		  margin-left: 15px;
+		  word-spacing: 3px;
+		}	
+		.forYou{
+			position: relative;
+			top: auto;
+			right: auto;
+			left: auto;
+			padding: 50px 30px 70px 30px;
+			bottom: -140px;	
+			font-size: 20px;
+			margin-top: -100px;
+		}
+		.container{
+			position: relative;
+			top: auto;
+			right: auto;
+			left: auto;
+			padding: 50px 30px 70px 30px;
+			bottom: 0;
+		}
+
+		.container .card{
+			width:350px;
+			height: 390px;
+		}    
+	}

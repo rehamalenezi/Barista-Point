@@ -1,0 +1,173 @@
+/*
+The color code for the project:
+dark text: #635553
+background: #bba399
+hover: #e0bfb3
+body backhround:  #ebe4e4
+P TEXT:  #5e0202
+*/
+
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Bodoni Moda', serif;
+ }
+body{
+  background-color: #ebe4e4;
+  margin: 0;
+  padding: 0;
+
+}
+  
+
+  
+.images {
+    padding-bottom: 30px;
+  }
+  
+  
+  
+  .intro {
+    color: #5e0202;
+    text-align: center;
+    margin-top: 30px;
+    padding: 25px;
+  }
+  
+  .heading {
+    font-size: 36px;
+  }
+  
+
+   
+   #pagewrap{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+   }
+   
+   .gallery{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10vh 5vh;
+    display: flex;
+    flex-wrap: wrap;
+   }
+   
+   .image{
+    width: 28%;
+    border: 1.5px solid #ccc;
+    padding: 10px;
+    margin: 2% 1.5%;
+    flex-grow: 1;
+    background-color: #e0bfb3;
+   }
+   
+   .image img{
+    max-width: 100%;
+    margin: 0 auto;
+   }
+   
+   .image:hover{
+    box-shadow: 0 1px 30px rgba(0,0,0,.3);
+    transform: scale(1.10);
+    border: none;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    z-index: 1;
+   }
+   
+   .image p{
+    padding: 10px;
+    text-align: center;
+    color: #635553;
+    font-size: 20px;
+   }
+
+
+
+/*--------------- coffee point footer  ---------------------------*/
+/*--------------- Social footer  ---------------------------*/
+.icons-footer{
+	display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 30px;	
+}
+.social-icons{
+  display: block; 
+  height: 50px;	
+}
+
+.instagram:hover img{
+	transform: translateY(0.30em);
+	border-color: #e0bfb3;
+	border-style: solid;
+	border-radius: 6px;
+	border-width: 3px;
+}
+.twitter:hover img{
+	transform: translateY(0.30em);
+	border-color: #e0bfb3;
+	border-style: solid;
+	border-radius: 6px;
+	border-width: 3px;
+}
+.linkedin:hover img{
+	transform: translateY(0.30em);
+	border-color: #e0bfb3;
+	border-style: solid;
+	border-radius: 6px;
+	border-width: 3px;
+	
+}
+ 
+
+/*--------------- The End of footer  ---------------------------*/
+
+hr {
+    border: 1px solid #e0bfb3;
+    margin-bottom: 0px;
+    width: 90%;
+  }
+
+.coffee-point-footer {
+    align-items: center;
+    background-color: #bba399;
+    color: #635553;
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    justify-content: center;
+  }
+.coftee-copyright{
+	position: relative;
+	top: 10px;
+}
+   
+   @media (max-width: 900px){
+    .image{
+     width: 45%;
+    }
+     .gallery{
+       padding: 10vh 1vh;
+     }
+     .intro {
+      margin-top: 60px;
+      padding: 20px;
+      padding-bottom: 0;
+    }
+     .heading {
+      font-size: 20px;
+    }
+   }
+   
+    @media (max-width: 600px){
+    .image{
+     width: 50%;
+     margin: 25px;
+    }
+   }
